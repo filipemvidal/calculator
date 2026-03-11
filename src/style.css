@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Digital-7 monospace";
+    src: url("../fonts/digital-7.mono.ttf");
+}
+
+body, .buttons, .btn-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color: red;
+    flex-direction: column;
+    height: 80%;
+    padding: 3%;
+    border-radius: 6px;
+}
+
+.display {
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 5%;
+    background-color: black;
+    height: 20%;
+    width: auto;
+    font-family: "Digital-7 monospace";
+    color: white;
+    font-size: clamp(1rem, 8vw, 6rem);
+}
+
+.buttons {
+    flex-direction: column;
+    height: 80%;
+    width: auto;
+    gap: 3%
+}
+
+.btn-line {
+    gap: 3%;
+    height: 20%;
+    width: auto;
+}
+
+button {
+    background-color: white;
+    border: unset;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    font-size: clamp(1rem, 5vw, 4rem);
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 4px 4px 0 #333;
+    transition: 0.1s;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 #333;
+}
