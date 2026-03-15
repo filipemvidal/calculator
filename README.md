@@ -64,4 +64,5 @@ Também existe um controle para evitar entradas inválidas, como inserir mais de
 
 Este projeto foi criado como exercício prático para reforçar conceitos fundamentais de manipulação do DOM, tratamento de eventos, organização de lógica em funções e controle de estado com JavaScript.
 
-Desenvolvido dentro do contexto de aprendizado do programa The Odin Project.
+## Créditos
+Este projeto foi desenvolvido como parte dos exercícios e estudos do [The Odin Project](https://www.theodinproject.com/).
