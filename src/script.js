@@ -85,6 +85,9 @@ function handleEspecial(button) {
                 cache.pop();
                 cache.pop();
                 displayNumber(cache[0]);
+                clearDisplay = false;
+                currentOperator = "";
+                clearDisplay = true;
             }
             break;
         case "C":
@@ -94,7 +97,7 @@ function handleEspecial(button) {
             display.textContent = "";
             break;
         case "CE":
-            if(typeof cache.at(-1) === "number")
+            if (typeof cache.at(-1) === "number")
                 display.textContent = "";
             cache.pop();
     }
@@ -104,10 +107,10 @@ function displayNumber(number) {
     const number_str = number.toString();
     const digits = number_str.length;
 
-    if(digits <= 10) {
+    if (digits <= 10) {
         display.textContent = number;
     } else {
-        if(number_str.indexOf(".") !== -1)
+        if (number_str.indexOf(".") !== -1)
             display.textContent = number.toFixed(8);
         else
             display.textContent = "OVERFLOW";
